@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="../../assets/splash-screen/duocfeo.png" >
+      </ion-toolbar>
+  <ion-toolbar>
+    <ion-title class= "css-asistencia">Mi Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+
+ 
+   <ion-button href= "http://127.0.0.1:8000/api/lista_asistencia/">
+    Mostrar Asistencia/API
+       </ion-button> 
+       
+</ion-grid>
+
+<ion-list>
+ 
+
+<ion-item *ngFor="let dato of datos" [routerLink] = "['/alumnos-api/' + dato.id_asistencia]">
+  {{dato.rut_alumno}}
+</ion-item>
+</ion-list>
+
+<!-- <ion-list *ngFor="let datito of dato">
+<ion-label>
+  {{datito.id_asistencia}}
+</ion-label>
+</ion-list> -->
+</ion-content>

@@ -1,0 +1,91 @@
+.divpeo{
+    position: relative;
+    left: 20px;
+
+    border-top: 10px;
+    border-color:black ;
+    border-radius: 20px;
+}
+
+// .position_lbl{
+//     position: relative;
+//     top: 0px;
+//     left: 70px;
+// }
+.piclovin { 
+    position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+// .background-content {
+//     background: red !important;
+// }
+
+
+
+ .container{
+    border-color:  green;
+     border-bottom: 10px;
+     width: 65%;
+     position: relative;
+     left: 50px;
+     top: 250px;
+ }
+
+ #subtitulo{
+     border: black;
+     border-width: 10px;
+     border-radius: 50%;
+    font-size: small;
+    font-family: Ruda;
+    text-align: center;
+    position: relative;
+    right: 10%;
+   }
+
+#input{
+    font-family: Ruda;
+    align-items: center;
+    position: relative;
+}
+
+#inputButton{
+    position: relative;
+    width: 90%;
+}
+
+#label{
+    font-family: Ruda;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    padding: 20px;
+}
+#subsubtitulo{
+    font-family: Ruda;
+    font-size: 14px;
+    position: relative;
+    left: 35%;
+}
+
+#button{
+    width: 50%;
+    padding: 5px;
+    position: relative;
+    left: 15%;
+}
+
+.olvidastepass{
+    
+    border-radius: 20px;
+    border-color: 30px;
+}
+
+.btn{
+    position: relative;
+    left: 15%;
+    width: 50%;
+    padding: 0.5px;
+   
+}

@@ -1,0 +1,82 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-div>
+<form  #form="ngForm" (ngSubmit)="login(form)">
+      <ion-grid  class= "container">
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="4" size-lg="5" size-xs="12">
+            <div padding>
+              <ion-item>
+                <ion-label id="label" position="stacked" class="position_label">nombre de usuario</ion-label>
+                <ion-button  >
+                  <ion-input id="input" name="usuario" type="text" ngModel required ></ion-input>
+                </ion-button>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">contraseña</ion-label>
+                <ion-input id="input" name="contraseña" type="text" ngModel required ></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button   type="submit" class="position_lbl"  [routerLink]="['/home']" >Ingresar</ion-button>
+              
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-div>
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar>
+<img src="../../assets/splash-screen/duocfeo.png" >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <img src="../../assets/alumnos/mclovin.png" class="piclovin">
+    <div id="container">
+
+    <form  #form="ngForm" (ngSubmit)="onLogin(form)">
+    <h1 id="subtitulo" >Iniciar sesión</h1>
+
+      <div padding>
+        <ion-item>
+          <ion-label id="label" position="stacked">Usuario</ion-label>
+          <ion-button id="inputButton" expand="block" fill="outline" class="campos">
+            <ion-input id="inputUsuario" name="usuario" type="text" ngModel required></ion-input>
+          </ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-button id="inputButton" expand="block" fill="outline">
+            <ion-input id="inputPassword" name="password" type="password" ngModel required></ion-input>
+          </ion-button>      
+        </ion-item>
+       
+      </div>
+      <div padding>
+        <!-- [routerLink]="['/home']" -->
+        <ion-button id="button" type="submit" color="tertiary" >Ingresar</ion-button>
+        
+      </div>
+  </form>
+  <ion-item>
+    <ion-button (click)="changePassword()" class="btn" color="tertiary" >¿Olvidaste tu contraseña?</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="crearUsuario()" class="btn" color="tertiary" >Crear usuario</ion-button>
+  </ion-item>
+  <ion-button id="button" type="submit" color="tertiary" href ='http://127.0.0.1:8000/api/lista_alumnos/'>Credenciales</ion-button>
+  </div>
+
+
+
+</ion-content>
